@@ -16,9 +16,9 @@
             <form v-on:submit.prevent="addRecipe">
                 <h3>Meal Name</h3>
                 <input type="text" v-model="currentMeal">
-                <h3>Meal Cost (Round to Nearest Dollar)</h3>
-                <input type="number" v-model="currentCost">
-                <button type="submit">Add Recipe and Cost</button>
+                <h3>Meal Cost<h3>
+                        <input type="number" step=".01" v-model="currentCost">
+                        <button type="submit">Add Recipe and Cost</button>
             </form>
 
         </div>
